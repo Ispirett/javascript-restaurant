@@ -1,0 +1,3 @@
+@mixin text-shadow($blur, $color){
+  text-shadow: 0 4px $blur $color;
+}
