@@ -849,9 +849,74 @@
 .m-nv-10 {
   margin: -2.5em 0; }
 
+.dance {
+  animation: dance 2s;
+  animation-delay: 1.5s; }
+
+.bloom {
+  animation: bloom 2s ease-in-out; }
+
+.fly-right-1 {
+  animation: fly-right 1s ease-in-out; }
+
+.fly-right-2 {
+  animation: fly-right 1s ease-in-out; }
+
+.fly-right-3 {
+  animation: fly-right 1s ease-in-out; }
+
+@keyframes dance {
+  0% {
+    transform: rotate(-20deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(-20deg); } }
+
+@keyframes fly-right {
+  0% {
+    transform: translateX(-1400px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes bloom {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
 p {
   font-size: 1.4em;
   font-weight: 200; }
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 8em;
+  border-radius: 0 0 50% 50%;
+  z-index: 1;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)), url("https://images.wallpaperscraft.com/image/wood_surface_texture_boards_118443_1920x1080.jpg");
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .nav #logo {
+    border: 5px solid #c91d19;
+    border-radius: 0 0 50% 50%;
+    padding: 0 1em 0;
+    background-color: black; }
+    .nav #logo h2 {
+      font-family: 'Italianno', cursive;
+      text-shadow: 0 4px 4px black; }
+  .nav span {
+    color: #c91d19; }
+  .nav a {
+    font-size: 2em;
+    font-weight: 200; }
 
 .heading {
   font-family: 'Merienda One', cursive; }
@@ -862,19 +927,19 @@ p {
   font-family: 'Italianno', cursive;
   transform: rotate(-20deg); }
 
-.meal-one {
+.header {
   background-image: linear-gradient(217deg, rgba(15, 15, 19, 0.42), rgba(255, 0, 0, 0) 70.71%), url("../img/food-menu.jpg");
   background-repeat: no-repeat;
   color: white; }
-  .meal-one .hero h1 {
+  .header .hero h1 {
     text-shadow: 0 4px 4px black;
     font-size: 10em; }
-    .meal-one .hero h1 span {
+    .header .hero h1 span {
       color: #c91d19; }
-  .meal-one .hero h3 {
+  .header .hero h3 {
     font-weight: lighter;
     text-shadow: 0 4px 4px black; }
-  .meal-one .hero p {
+  .header .hero p {
     font-size: 2em;
     font-weight: 400;
     text-shadow: 0 4px 4px black; }
@@ -883,7 +948,7 @@ p {
   display: block !important; }
 
 .about_us .about_us-header {
-  margin-bottom: 10em; }
+  margin-bottom: 6em; }
   .about_us .about_us-header p {
     font-size: 1.5em;
     text-align: center; }
@@ -903,3 +968,54 @@ p {
 
 .wrapper:nth-child(2) {
   background-image: url("../img/hours.jpg"); }
+
+.meals h1 {
+  font-family: 'Italianno', cursive;
+  line-height: .2;
+  color: #c91d19;
+  text-shadow: 0 4px 1px black; }
+
+.meals h3 {
+  font-family: 'Merienda One', cursive;
+  font-size: 2.5em;
+  color: #ffb435; }
+
+.meals article {
+  min-width: 10em; }
+
+.meals i {
+  color: #ffb435; }
+
+.meals p, .meals i {
+  text-shadow: 0 4px 1px black; }
+
+.footer {
+  color: white;
+  text-align: center; }
+  .footer .fp-tableCell {
+    display: block !important; }
+  .footer .footer-container {
+    padding: 1em;
+    width: 75%;
+    margin: 0 auto 0;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: .5em;
+    box-shadow: 0 6px 20px black; }
+    .footer .footer-container h2 {
+      font-family: 'Merienda One', cursive;
+      color: #c91d19; }
+    .footer .footer-container h4 {
+      font-family: 'Merienda One', cursive;
+      color: #ffb435; }
+    .footer .footer-container input {
+      color: white; }
+  .footer .map {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: .5em;
+    border: 0;
+    box-shadow: 0 6px 20px black;
+    height: 350px;
+    margin-top: -2em;
+    opacity: .8;
+    width: 70%; }

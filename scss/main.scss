@@ -1,8 +1,9 @@
 @import "mixins";
 @import "utilities";
-//.fp-tableCell{
-//  display: block !important;
-//}
+@import "animation";
+$primary-color: #c91d19;
+$secondary-color: #ffb435;
+
 @import url('https://fonts.googleapis.com/css?family=Allura|Cinzel+Decorative|Italianno|Niconne|Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Allura|Cinzel+Decorative|Italianno|Merienda+One|Niconne|Parisienne&display=swap');
 p{
@@ -10,6 +11,53 @@ p{
   font-weight: 200;
 
 }
+
+
+  .nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 8em;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)),url("https://images.wallpaperscraft.com/image/wood_surface_texture_boards_118443_1920x1080.jpg");
+    box-shadow: 0 8px  20px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #logo{
+      border: 5px solid $primary-color;
+      border-radius: 0 0 50% 50%;
+      padding: 0 1em 0 ;
+      background-color: black;
+      h2{
+        font-family: 'Italianno', cursive;
+
+        @include text-shadow(4px, black);
+      }
+
+    }
+
+
+    span{
+      color: $primary-color;
+    }
+
+    a{
+      font-size: 2em ;
+      font-weight: 200;
+
+    }
+
+  }
+
+
+
+
+
+
 
 .heading{
   font-family: 'Merienda One', cursive;
@@ -22,10 +70,15 @@ p{
   transform: rotate(-20deg);
 }
 
-.meal-one{
+.header{
   background-image: linear-gradient(217deg, rgba(15, 15, 19, 0.42), rgba(255, 0, 0, 0) 70.71%), url('../img/food-menu.jpg');
   background-repeat: no-repeat;
   color: white;
+
+
+
+
+
 
   .hero{
 
@@ -62,7 +115,7 @@ p{
       font-size: 1.5em ;
       text-align: center;
     }
-    margin-bottom: 10em;
+    margin-bottom: 6em;
   }
   .article-img{
     border-radius: .5em;
@@ -88,4 +141,82 @@ p{
   &:nth-child(2){
     background-image: url('../img/hours.jpg');
   }
+}
+
+
+.meals{
+  h1{
+    font-family: 'Italianno', cursive;
+    line-height: .2;
+    color: $primary-color;
+    @include text-shadow(1px, black)
+  }
+  h3{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+    color: $secondary-color;
+  }
+
+  article{
+    min-width: 10em;
+  }
+
+
+  i{
+    color: $secondary-color;
+  }
+  p,i{
+    @include text-shadow(1px, black)
+  }
+
+
+}
+
+
+// footer
+
+.footer{
+  color: white;
+  text-align: center;
+
+  .fp-tableCell{
+    display: block !important;
+  }
+  .footer-container{
+    padding: 1em;
+    width: 75%;
+    margin: 0 auto 0;
+    h2{
+      font-family: 'Merienda One', cursive;
+      color: $primary-color;
+    }
+
+    h4{
+      font-family: 'Merienda One', cursive;
+      color: $secondary-color;
+    }
+
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: .5em;
+    box-shadow: 0 6px 20px black;
+    input{
+      color: white;
+    }
+
+  }
+  .map{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: .5em;
+    border: 0;
+    box-shadow: 0 6px 20px black;
+    height: 350px;
+    margin-top: -2em;
+    opacity: .8;
+    width: 70%;
+
+  }
+
+
+
 }

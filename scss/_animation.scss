@@ -1,0 +1,56 @@
+
+.dance{
+  animation: dance 2s ;
+  animation-delay: 1.5s;
+}
+
+.bloom{
+animation: bloom 2s ease-in-out;
+
+}
+
+@for $i from 1 through 3 {
+  .fly-right-#{$i}{
+    animation: fly-right 1s ease-in-out;
+  }
+}
+
+
+
+@keyframes dance {
+  0%{
+    transform: rotate(-20deg);
+  }
+
+  50%{
+    transform: rotate(0);
+  }
+
+  75%{
+    transform: rotate(20deg);
+  }
+
+
+  100%{
+    transform: rotate(-20deg);
+  }
+}
+
+
+@keyframes fly-right {
+  0%{
+    transform: translateX(-1400px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes bloom {
+ 0%{
+   opacity: 0;
+ }
+  100%{
+    opacity: 100%;
+  }
+}
