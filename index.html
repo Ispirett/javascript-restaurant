@@ -20,7 +20,7 @@
                 <h2>A <span> Red</span> Affair</h2>
 
             </div>
-          <ul>
+          <ul id="phone-menu">
               <li><a href="#home">Home</a></li>
               <li><a href="#food-menu"> Menu</a>
               <li><a href="#footer"> contact us</a></li>
@@ -45,18 +45,18 @@
             <div id="about-us" class="section about_us">
                 <div class="center about_us-header m-l-a m-r-a  s12">
                     <h4 class="heading">Get To Know Us</h4>
-                    <p>
+                    <p class="w-p-8 m-l-a m-r-a">
                         We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
                     </p>
                 </div>
 
-                <div class="row w-p-6  about_us-article ">
+                <div class="row w-p-7  about_us-article ">
 
-                    <figure class="col s12">
+                    <article class="col s12 m12 l6  ">
                         <img class=" materialboxed responsive-img hoverable article-img" src="./dist/assets/img/nice.jpg" alt="">
-                    </figure>
+                    </article>
 
-                    <article class="col 12">
+                    <article class="col s12 m12 l6">
                         <h1 class="heading">The History</h1>
                         <p>
                             We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
@@ -73,22 +73,23 @@
                 </div>
 
 
-                <div class="row w-p-6  about_us-article ">
+                <div class="row w-p-7  about_us-article ">
 
-                        <figure class="col s12">
-                            <img class="materialboxed  responsive-img hoverable article-img" src="./dist/assets/img/free.jpg" alt="">
-                        </figure>
 
-                    <article class="col  s12">
+                    <article class="col  s12 m12 l6">
                         <h1 class="heading">The History</h1>
                         <p>
-                            We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
+                            We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
                         </p>
                         <p>
-                            We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
-                        </p>
+                            We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Welcome to elixir restaurant
 
                     </article>
+                    <article  class="col s12 m12 l6 ">
+                        <img class="materialboxed  responsive-img hoverable article-img" src="./dist/assets/img/free.jpg" alt="">
+                    </article>
+
+
 
                 </div>
 
@@ -98,94 +99,311 @@
             <!-- food section -->
             <div id="food-menu" class="section food-menu  ">
 
-                <div class="row">
-                    <!-- dishes -->
-                    <section class="white-text col s6 t-center meals ">
-                        <h1 class="">Best Meals</h1>
-                        <h3 class="">World class chefs</h3>
-                        <div class="meals_article-container  d-flex justify-c ">
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
 
+                <div class="row food-tabs">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a href="#test1">Best Selling</a></li>
+                            <li class="tab col s3"><a class="active" href="#test2">Top Meals</a></li>
+                            <li class="tab col s3 "><a href="#test3">Finest Picks</a></li>
+                            <li class="tab col s3"><a href="#test4">Deserts</a></li>
+                        </ul>
+                    </div>
+                    <div id="test1" class="col s12">
+                        <div class="row">
+                            <!-- dishes -->
+                            <section class="white-text col s6 t-center meals ">
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+
+
+                            </section>
+                            <!-- end dishes -->
+                            <section class="white-text col s6 t-center meals  ">
+
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+                            </section>
                         </div>
+                    </div>
+                    <div id="test2" class="col s12">
+                        <div class="row">
+                            <!-- dishes -->
+                            <section class="white-text col s6 t-center meals ">
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
 
-                        <div class="meals  d-flex justify-c ">
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
+                                </div>
 
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+
+
+                            </section>
+                            <!-- end dishes -->
+                            <section class="white-text col s6 t-center meals  ">
+
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+                            </section>
                         </div>
+                    </div>
+                    <div id="test3" class="col s12">
+                        <div class="row">
+                            <!-- dishes -->
+                            <section class="white-text col s6 t-center meals ">
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
 
 
 
-                    </section>
-                    <!-- end dishes -->
-                    <section class="white-text col s6 t-center meals  ">
+                            </section>
+                            <!-- end dishes -->
+                            <section class="white-text col s6 t-center meals  ">
 
-                        <h1 class="">Best Meals</h1>
-                        <h3 class="">World class chefs</h3>
-                        <div class="meals_article-container  d-flex justify-c ">
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
 
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+                            </section>
                         </div>
+                    </div>
+                    <div id="test4" class="col s12">
+                        <div class="row">
+                            <!-- dishes -->
+                            <section class="white-text col s6 t-center meals ">
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
 
-                        <div class="meals  d-flex justify-c ">
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
-                            <article class="w-2 ">
-                                <h5>English Breakfast..... <i>$100.00</i></h5>
-                                <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
-                            </article>
+                                </div>
 
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <img src="dist/assets/img/food-menu.jpg" class="responsive-img  materialboxed hoverable " alt="cricle">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+
+
+                            </section>
+                            <!-- end dishes -->
+                            <section class="white-text col s6 t-center meals  ">
+
+                                <h1 class="">Best Meals</h1>
+                                <h3 class="">World class chefs</h3>
+                                <div class="meals_article-container  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+
+                                <div class="meals  d-flex justify-c ">
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+                                    <article class="w-2 ">
+                                        <h5>English Breakfast..... <i>$100.00</i></h5>
+                                        <p>Scrambled eggs with crispy bacon, sausage, black pudding, tomato & mushroom.</p>
+                                    </article>
+
+                                </div>
+                            </section>
                         </div>
-                    </section>
+                    </div>
                 </div>
+
+
             </div>
 
             <!-- end food section -->
             <footer id="footer" class="section footer d-flex">
+                    <div class="dummy">
 
+                    </div>
                     <section class="footer-container">
                         <h2>Get in contact with us!</h2>
 
                         <h4>Plenty Gardens sweet rose street</h4>
                         <form class="col s12 ">
                             <div class="row">
-                                <div class="input-field col s6">
+                                <div class="input-field col s12 m6 l6">
                                     <input placeholder="first name" id="first_name" type="text" class="validate">
                                     <label for="first_name">First Name</label>
                                 </div>
-                                <div class="input-field col s6">
+                                <div class="input-field col s12 m6 l6">
                                     <input placeholder="last name" id="last_name" type="text" class="validate">
                                     <label for="last_name">Last Name</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col s6">
+                                <div class="input-field col s12 m12 l6">
                                     <input value="Enter your email" id="email" type="email" class="validate">
                                     <label for="email">Email</label>
                                 </div>
-                                <div class="input-field col s6">
+                                <div class="input-field col s12 m12 l6">
                                     <input id="msg" type="text" class="validate">
                                     <label for="msg"> Enter you message</label>
                                 </div>
