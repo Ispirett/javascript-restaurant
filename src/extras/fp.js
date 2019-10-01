@@ -1,7 +1,8 @@
+import fullpage from 'fullpage.js';
+import "fullpage.js/dist/fullpage.css";
 import materialize from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
-import fullpage from "fullpage.js";
-import "fullpage.js/dist/fullpage.css";
+
 
 window.onload = () => {
     materialize.AutoInit();
@@ -13,6 +14,7 @@ window.onload = () => {
         slidesNavigation: true
     });
 };
+
 
 const toggleNav = (() => {
     const logo = document.getElementById("logo");
