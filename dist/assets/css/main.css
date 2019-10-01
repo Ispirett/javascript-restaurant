@@ -849,6 +849,9 @@
 .m-nv-10 {
   margin: -2.5em 0; }
 
+.dummy {
+  height: 6em; }
+
 .dance {
   animation: dance 2s;
   animation-delay: 1.5s; }
@@ -969,6 +972,10 @@ p {
 .wrapper:nth-child(2) {
   background-image: url("../img/hours.jpg"); }
 
+.meals img {
+  width: 10em;
+  margin: 0 auto; }
+
 .meals h1 {
   font-family: 'Italianno', cursive;
   line-height: .2;
@@ -1019,3 +1026,42 @@ p {
     margin-top: -2em;
     opacity: .8;
     width: 70%; }
+
+.tabs {
+  background: none !important; }
+  .tabs .tab a {
+    color: #ffb435 !important; }
+  .tabs .tab .active {
+    border-bottom: 3px solid #c91d19 !important; }
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nav #logo {
+      position: absolute;
+      cursor: pointer; }
+    .nav #phone-menu {
+      position: relative;
+      top: -12.5em;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.76);
+      width: 100%;
+      transition: top 1s ease-out; }
+  .header .hero h1 {
+    font-size: 4em; }
+  .header .hero h3 {
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .header .hero p {
+    font-size: 1.5em; }
+  .footer .footer-container h2 {
+    font-size: 2em; }
+  .footer .footer-container h4 {
+    font-size: 1.5em; }
+  .footer .footer-container, .footer .map {
+    width: 98%; }
+  .footer .map {
+    height: 150px; } }

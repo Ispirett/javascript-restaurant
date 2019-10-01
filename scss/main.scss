@@ -1,7 +1,7 @@
 @import "mixins";
 @import "utilities";
 @import "animation";
-$primary-color: #c91d19;
+$primary-color: rgb(201, 29, 25);
 $secondary-color: #ffb435;
 
 @import url('https://fonts.googleapis.com/css?family=Allura|Cinzel+Decorative|Italianno|Niconne|Parisienne&display=swap');
@@ -145,6 +145,10 @@ p{
 
 
 .meals{
+  img{
+    width: 10em;
+    margin: 0 auto;
+  }
   h1{
     font-family: 'Italianno', cursive;
     line-height: .2;
@@ -217,6 +221,23 @@ p{
 
   }
 
-
-
 }
+
+.tabs{
+  background: none !important;
+  .tab{
+
+    a{
+      color: $secondary-color !important;
+
+    }
+    .active{
+
+      border-bottom: 3px solid $primary-color !important;
+    }
+
+  }
+}
+
+
+@import "media_queries";
