@@ -5,3 +5,4 @@ files:
   ignore:
     - 'src/*'
     - 'dist/*'
+    - 'webpack.config.js'
