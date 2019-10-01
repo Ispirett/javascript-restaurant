@@ -4,26 +4,16 @@ import sectionHeader from "../components/sections/sectionHeader";
 import sectionAboutUs from "../components/sections/sectionAboutUs";
 import sectionFoodMenu from "../components/sections/sectionFoodMenu";
 import footer from "../components/sections/footer";
+import "../components/utils";
 
-const root = document.getElementById('root');
+const root = document.getElementById("root");
 
 const mainContent = [
     sectionHeader(),
     sectionAboutUs(),
     sectionFoodMenu(),
     footer()
-
 ];
 
-const appendList = [
-    Nav(),
-    Main.mainWrapper(mainContent)
-
-];
+const appendList = [Nav(), Main.mainWrapper(mainContent)];
 root.append(...appendList);
-
-
-
-
-
-
