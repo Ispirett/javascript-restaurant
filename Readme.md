@@ -1,7 +1,7 @@
 # A Red Affair javascript restaurant Project 
 
 ## Developer [Ispirett](https://github.com/Ispirett)
-## [live_Link](https://ispirett.github.io/javascript-restaurant/) coming soon
+## [live_Link](https://ispirett.github.io/javascript-restaurant/)
 
 ### Project Description
 
